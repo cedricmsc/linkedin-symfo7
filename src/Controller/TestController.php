@@ -34,9 +34,18 @@
         public function showproducts()
         {
             $products = ['ordinateur','telephone','radio','cassette'];
+            
+            $image = [
+                'name'=> 'Belle image',
+                'fruit' => 'pommes',
+                'plat'  => 'pizza reine',
+                'sport'  => 'football',
+                'jeu'  => 'ludo'
+                ];
 
             return $this->render('product.html.twig', [
-                'products' => $products
+                'products' => $products, 'image'=> $image, 
+                'exemple'
             ]);
         }
    
